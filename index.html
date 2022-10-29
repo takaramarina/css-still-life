@@ -28,6 +28,14 @@
     right: 200px;
     bottom: 50px;
   }
+  .bustelo-bg {
+    width: 150px;
+    height: 200px;
+    background-color: hsl(44, 100%, 41%);
+    position: absolute;
+    right: 280px;
+    bottom: 60px;
+  }
   
   .can-top {
     width: 150px;
@@ -35,6 +43,16 @@
     border: 1px solid gray;
     border-radius: 50%;
     background-color: rgb(255, 220, 33);
+    position: absolute;
+    right: 0px;
+    top: -10px;
+  }
+  .can-top-bg {
+    width: 150px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: hsl(51, 82%, 35%);
     position: absolute;
     right: 0px;
     top: -10px;
@@ -49,6 +67,16 @@
     right: 15px;
     top: -8px;
   }
+  .can-top-shadow-bg {
+    width: 120px;
+    height: 15px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: hsl(43, 71%, 49%);
+    position: absolute;
+    right: 15px;
+    top: -8px;
+  }
   .can-bottom {
     width: 150px;
     height: 20px;
@@ -58,6 +86,32 @@
     position: absolute;
     right: 0px;
     bottom: -10px;
+  }
+  .can-bottom-bg {
+    width: 150px;
+    height: 20px;
+    border: 7px solid gray;
+    border-radius: 50%;
+    background-color: rgb(167, 0, 0);
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+  }
+  .red-bg {
+    background-color: rgb(167, 0, 0);
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+  .bg-redbox {
+    width: 60px;
+    height: 120px;
+    border-radius: 10%;
+    border: 1.5px solid rgb(167, 0, 0);
+    position: absolute;
+    bottom: 60px;
+    left: 5px
   }
   
   .cup {
@@ -95,6 +149,8 @@
   .brand {
     font-family: "Impact", fantasy;
     font-size: 40px;
+    position: absolute;
+    top: 27px;
   }
   .red {
     background-color: rgb(228, 0, 0);
@@ -108,9 +164,16 @@
 
 
 <div class="frame">
+  <div class="bustelo-bg">
+  	<div class="can-top-bg"></div>
+    <div class="can-top-shadow-bg"></div>
+    <div class="bg-redbox"></div>
+    <div class="can-bottom-bg"></div>
+    <div class="red-bg"></div>
+  </div>
 	<div class="bustelo">
-    <div class="brand">FE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CA</div>
-    <div class="brand">TELO BUS</div>
+    <div class="brand">FE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CA
+    <br> TELO BUS</div>
     <div class="can-bottom"></div>
     <div class="red"></div>
     <div class="can-top"></div>
