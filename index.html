@@ -1,5 +1,7 @@
 <style>
 
+   * { box-sizing: border-box; }
+  
   body {
     display: flex;
 /*     background-color: green; */
@@ -27,6 +29,37 @@
     bottom: 50px;
   }
   
+  .can-top {
+    width: 150px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: rgb(255, 220, 33);
+    position: absolute;
+    right: 0px;
+    top: -10px;
+  }
+  .can-top-shadow {
+    width: 120px;
+    height: 15px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: rgb(255, 220, 33);
+    position: absolute;
+    right: 15px;
+    top: -8px;
+  }
+  .can-bottom {
+    width: 150px;
+    height: 20px;
+    border: 7px solid gray;
+    border-radius: 50%;
+    background-color: rgb(228, 0, 0);
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+  }
+  
   .cup {
     background: linear-gradient(0deg, rgba(255,255,255,1) 53%, rgba(5,0,125,1) 53%);
 );
@@ -38,9 +71,30 @@
     top: 200px;
     border: 1px solid gray;
   }
+  .cup-handle {
+    width: 30px;
+    height: 40px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: gray;
+    right: 305px;
+    top: 205px;
+    border-radius: 50%
+  }
+  .cup-handle-inner {
+    width: 20px;
+    height: 30px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: white;
+    right: 310px;
+    top: 210px;
+    border-radius: 50%
+  }
   
   .brand {
-    font-family: sans-serif;
+    font-family: "Impact", fantasy;
+    font-size: 40px;
   }
   .red {
     background-color: rgb(228, 0, 0);
@@ -55,9 +109,15 @@
 
 <div class="frame">
 	<div class="bustelo">
-    <div class="brand">FE CA</div>
+    <div class="brand">FE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CA</div>
     <div class="brand">TELO BUS</div>
+    <div class="can-bottom"></div>
     <div class="red"></div>
+    <div class="can-top"></div>
+    <div class="can-top-shadow"></div>
+    
   </div>
+  <div class="cup-handle"></div>
+  <div class="cup-handle-inner"></div>
   <div class="cup"></div>
 </div>
