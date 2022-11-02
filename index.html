@@ -17,9 +17,9 @@
     width: 500px;
     height: 500px;
     position: relative;
-    background-color: rgb(255, 175, 86);
-    /*     border: 2px dotted green; */
-    /*     margin: 0 auto; */
+		background: linear-gradient(
+      0deg, rgba(167,167,167,1) 40%, 
+      rgba(255,255,255,1) 40%);
   }
 
   .bustelo {
@@ -254,7 +254,7 @@
       rgba(199,73,0,1) 100%);
     position: absolute;
     left: 320px;
-    bottom: 170px;
+    bottom: 190px;
     transform: perspective(15px) rotateX(-1deg);
   }
   .orange-bottom {
@@ -268,7 +268,7 @@
       rgba(226,87,6,1) 100%, 
       rgba(199,73,0,1) 100%);
     position: absolute;
-    bottom: 145px;
+    bottom: 165px;
     left: 328px;
   }
   .orange-top {
@@ -278,8 +278,67 @@
     border-radius: 50%;
     border: 1px solid white;
     position: absolute;
-    bottom: 274px;
+    bottom: 294px;
     left: 315px;
+  }
+  .kettle-top {
+    width: 23px;
+    height: 25px;
+    background: black;
+    position: absolute;
+    bottom: 330px;
+    left: 380px;
+    transform: perspective(2px) rotateX(-1deg);
+  }
+  .silver{
+		background: linear-gradient(
+      90deg, rgba(237,176,0,1) 0%, 
+      rgba(237,185,0,1) 14%, 
+      rgba(102,38,0,1) 23%, 
+      rgba(199,148,0,1) 32%, 
+      rgba(232,177,0,1) 48%, 
+      rgba(159,158,154,1) 50%, 
+      rgba(235,235,235,1) 60%, 
+      rgba(173,173,173,1) 67%, 
+      rgba(73,73,73,1) 85%, 
+      rgba(199,194,194,1) 89%);
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    bottom: 70px;
+    left: 320px;
+    border-radius: 5%;
+    border: 1px solid black;
+    transform: perspective(9px) rotateX(1deg);
+  }
+  .silver-clip {
+    background: linear-gradient(
+      90deg, rgba(237,0,0,1) 0%, 
+      rgba(237,29,0,1) 14%, 
+      rgba(102,38,0,1) 23%, 
+      rgba(199,0,0,1) 32%, 
+      rgba(232,0,0,1) 48%, 
+      rgba(159,158,154,1) 50%, 
+      rgba(235,235,235,1) 60%, 
+      rgba(173,173,173,1) 67%, 
+      rgba(73,73,73,1) 85%, 
+      rgba(199,194,194,1) 89%);
+    height: 50px;
+    width: 145px;
+    position: absolute;
+    bottom: 67px;
+    left: 318px;
+    border-radius: 5%;
+    transform: perspective(9px) rotateX(1deg);
+  }
+  .kettle-handle {
+    background: black;
+    width: 23px;
+    height: 100px;
+    position: absolute;
+    left: 420px;
+    bottom: 220px;
+    border-radius: 0% 50% 50% 0%
   }
 </style>
 
@@ -332,6 +391,10 @@
   <div class="cup"></div>
   <div class="cup-shadow"></div>
   <div class="orange-top"></div>
+  <div class="kettle-top"></div>
   <div class="orange"></div>
   <div class="orange-bottom"></div>
+  <div class="silver"></div>
+  <div class="silver-clip"></div>
+  <div class="kettle-handle"></div>
 </div>
